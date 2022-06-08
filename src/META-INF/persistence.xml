@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="[IS1] Projekat - Real" transaction-type="RESOURCE_LOCAL">
+		<class>entities.Zanr</class>
+		<class>entities.Film</class>
+		<class>entities.Sala</class>
+		<class>entities.Projekcija</class>
+		<class>entities.Klijent</class>
+		<class>entities.Popust</class>
+		<class>entities.Iznajmljivanje</class>
+		<class>entities.Karta</class>
+		
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:myDB"/>
+			<property name="javax.persistence.jdbc.user" value="coolicc"/>
+			<property name="javax.persistence.jdbc.password" value="kkSombor16"/>
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
